@@ -440,7 +440,8 @@ void Game::render()
      //*/
 	DrawDebugCircle(targetPos, 20.f, mWindow, sf::Color::Blue);
 	//*//
-	auto path = navMesh.GetNavPath(mPlayer.getPosition(), targetPos);
+	//auto path = navMesh.GetNavPath(mPlayer.getPosition(), targetPos);
+	auto path = navMesh.GetNavPath(pObject->getPosition(), targetPos);
 	for ( int i = 0; i < path.size(); ++i ) {
 		if (i < path.size() - 1 ) {
 			DrawDebugLine(path[i], path[i+1], mWindow, sf::Color::Blue);

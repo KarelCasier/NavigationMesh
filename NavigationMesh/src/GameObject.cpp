@@ -26,6 +26,11 @@ void GameObject::setPosition(const sf::Vector2f &newPos)
 	mPosition = newPos;
 }
 
+const sf::Vector2f GameObject::getPosition()
+{
+	return mPosition;
+}
+
 void GameObject::draw(sf::RenderTarget &target, sf::RenderStates states) const
 {
 	/*

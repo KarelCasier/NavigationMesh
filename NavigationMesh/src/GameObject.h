@@ -15,6 +15,7 @@ public:
 	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 	
 	void setPosition(const sf::Vector2f& newPos);
+	const sf::Vector2f getPosition();
 	
 	void changeState(AIState* pNewState);
 	
