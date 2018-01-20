@@ -28,7 +28,6 @@
 *.out
 *.app
 
-
 ### CMake ###
 CMakeCache.txt
 CMakeFiles
@@ -37,15 +36,5 @@ Makefile
 cmake_install.cmake
 install_manifest.txt
 
-
-### Vim ###
-# swap
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-# session
-Session.vim
-# temporary
-.netrwhist
-*~
-# auto-generated tag files
+build/
 tags
