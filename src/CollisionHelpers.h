@@ -3,11 +3,11 @@
 #include <SFML/System/Vector2.hpp>
 #include "math.h"
 
-typedef double coord2_t;  // must be big enough to hold 2*max(|coordinate|)^2
+typedef double coord2_t; // must be big enough to hold 2*max(|coordinate|)^2
 // 2D cross product of OA and OB vectors, i.e. z-component of their 3D cross product.
 // Returns a positive value, if OAB makes a counter-clockwise turn,
 // negative for clockwise turn, and zero if the points are collinear.
-coord2_t cross(const sf::Vector2f &O, const sf::Vector2f &A, const sf::Vector2f &B);
+coord2_t cross(const sf::Vector2f& O, const sf::Vector2f& A, const sf::Vector2f& B);
 
 bool vectorCompare(sf::Vector2f& a, sf::Vector2f& b);
 
@@ -39,4 +39,7 @@ bool isPointOnLineSegment(const sf::Vector2f& p, const sf::Vector2f& a1, const s
 sf::Vector2f getMinimumDistfromPoint(const sf::Vector2f& p, const std::vector<sf::Vector2f>& points);
 //----------------------------------------------------------------------------
 
-sf::Vector2f GetIntersectionPoint(const sf::Vector2f& x1, const sf::Vector2f& x2, const sf::Vector2f& y1, const sf::Vector2f& y2);
+sf::Vector2f GetIntersectionPoint(const sf::Vector2f& x1,
+                                  const sf::Vector2f& x2,
+                                  const sf::Vector2f& y1,
+                                  const sf::Vector2f& y2);

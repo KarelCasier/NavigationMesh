@@ -1,20 +1,20 @@
 #pragma once
 #include "AIState.h"
 
-class NavigateToMouse : public AIState
-{
-	NavigateToMouse(){}
+class NavigateToMouse : public AIState {
+    NavigateToMouse() {}
+
 public:
-	///< Singleton
-	static NavigateToMouse* Instance(){
-		static NavigateToMouse instance;
-		return &instance;
-	}
+    ///< Singleton
+    static NavigateToMouse* Instance()
+    {
+        static NavigateToMouse instance;
+        return &instance;
+    }
 
-	~NavigateToMouse();
+    ~NavigateToMouse();
 
-	virtual void enter(GameObject* entity);
-	virtual void execute(GameObject* entity, const sf::Time& dTime);
-	virtual void exit(GameObject* entity);
-
+    virtual void enter(GameObject* entity);
+    virtual void execute(GameObject* entity, const sf::Time& dTime);
+    virtual void exit(GameObject* entity);
 };
